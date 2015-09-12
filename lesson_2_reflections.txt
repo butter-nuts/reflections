@@ -1,5 +1,20 @@
-git log
-git diff ID1 ID2
+Q: What happens when you initialize a repository? Why do you need to do it? 
+A: git creates a hidden folder in the project directory which contains the project history data. This is required so that git has a location to save the required version control data and to that git can track that the project is using git version control.
+ 
+Q: How is the staging area different from the working directory and the repository? What value do you think it offers? 
+A: The staging area is an intermediate space between the working directory and the repository. Once the user is ready to add files to the repository they are first added to the staging area (git add) and then the staging area is committed. The user does not have to stage all files, rather only those that they wish to include in the current commit. This is useful as it provides complete control over what is committed.
+ 
+Q: How can you use the staging area to make sure you have one commit per logical change? 
+A: By only adding the files related to a single logical change to the staging area prior to each commit. Even if multiple logical changes have been made over multiple files, each file (or files related to each logical change) can be stages and committed individually.
+ 
+Q: What are some situations when branches would be helpful in keeping your history organized? How would branches help? 
+A: If I am working on experimental features I can safely work on it in a new branch, if I am collaborating we can each have our own branch, if I am bug fixing I can do it in a new branch until I am convinced the bug has been fixed, etc.
 
-- staging area is a temporary space to place item prior to commiting to the repository. this has the value of alowing you to controll whot and how items are added to the repository.
-- test
+Q: How do the diagrams help you visualize the branch structure? 
+A: Because you can determine at what point in the commit history the branch branched off. This can help determine which code/features are in each branch.
+
+ 
+Q: What is the result of merging two branches together? Why do we represent it in the diagram the way we do? 
+
+ 
+Q: What are the pros and cons of Git’s automatic merging vs. always doing merges manually? 
