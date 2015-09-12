@@ -2,3 +2,4 @@ git log
 git diff ID1 ID2
 
 - staging area is a temporary space to place item prior to commiting to the repository. this has the value of alowing you to controll whot and how items are added to the repository.
+- test
