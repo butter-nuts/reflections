@@ -7,6 +7,9 @@ A: Pulling manualy allows the user to decide what changes are to be incoperated 
 Q: Describe the differences between forks, clones, and branches. When would you use one instead of another?
 A: Clone is a copt of a repository, fork is similar to clone but retains a referance to the original project and is a feature of GitHub (not Git). Branches are branched from a commit, and still form part of the original repository.
 
+Q: What is the benefit of having a copy of the last known state of the remote stored locally?
+A: Having a copy of the last known state of the remote stored locally allows the user to work offline with the latest (at the time of the last fetch) version of the remote. This can be usefull in many ways (such as the ability yo use diff, the ability to merge, etc.)
+
 Commands:
 git remote          | Manage the set of repositories ("remotes") whose branches you track.
 git remote -v       | Be a little more verbose and show remote url after name.
