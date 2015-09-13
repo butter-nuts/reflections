@@ -4,8 +4,11 @@ A: For a number of reasons. It allows tou to acces your work from multiple compu
 Q: Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 A: Pulling manualy allows the user to decide what changes are to be incoperated and when. This allows total control and prevents pulling changes made by others which may break the working (i.e. local) compy of the project. 
 
+Q: Describe the differences between forks, clones, and branches. When would you use one instead of another?
+A: Clone is a copt of a repository, fork is similar to clone but retains a referance to the original project and is a feature of GitHub (not Git). Branches are branched from a commit, and still form part of the original repository.
+
 Commands:
-git remote  				| Manage the set of repositories ("remotes") whose branches you track.
-git remote -v				| Be a little more verbose and show remote url after name.
+git remote          | Manage the set of repositories ("remotes") whose branches you track.
+git remote -v       | Be a little more verbose and show remote url after name.
 git push  					| Updates remote refs using local refs, while sending objects necessary to complete the given refs.   
 git pull  					| Incorporates changes from a remote repository into the current branch. 
