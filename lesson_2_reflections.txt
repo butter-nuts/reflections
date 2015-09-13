@@ -15,6 +15,23 @@ A: Because you can determine at what point in the commit history the branch bran
 
  
 Q: What is the result of merging two branches together? Why do we represent it in the diagram the way we do? 
-
+A: Merging two branches together merges all the commits of both branches into a single branch. We show this as another node on the tree as it represents a commit to the repository.
  
 Q: What are the pros and cons of Git’s automatic merging vs. always doing merges manually? 
+A: The pros of automatic merging is that it takes no user input and is fast to do. The con of automatic merging is that it can only be performed if no conflicts exist. The pros of manual merging is it lets the user decide what code is kept in the final merge allowing full control over the merge. The con of manual merging is it is time consuming.
+
+
+
+Commands:
+git add  					|    Add a file to the staging area
+git commit  					|    Commit the files from the staging area to the repository 
+git status  					|    Show which files are in the staging area, and which files from the working directory are not part of the repository    
+git diff  					|    Git diff without arguments is comparing the working directory with the staging area
+git diff --staged  				|    Compare the staging area with the repository
+git reset --hard  				|    Undo all changes! There is no rollback for this, so be carefull!
+git checkout master  				|    Restore the "Head" to the latest check-in (this will be part of a later lesson/module)
+git log --graph --oneline <branch1> <branch2>  	|    Show a visual representation of the commit history within different branches
+git checkout -b new_branch_name  		|    Creates a new branch and do a checkout on this branch in one call instead of git branch new_branch_name and git checkout new_branch_name
+git merge branch1 branch2  			|    Merge two branches, branch2 get merged into branch1
+git branch -d name  				|    Remove the branch with the specified name
+git show commitId  				|    Show the changes made in this commit compared to the previous version. This is working even after merging.
