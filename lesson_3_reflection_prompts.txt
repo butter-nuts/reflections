@@ -1,0 +1,2 @@
+Q: When would you want to use a remote repository rather than keeping all your work local?
+A: For a number of reasons. It allows tou to acces your work from multiple computers/locations, as well as to easuily share your work and colaborate. It also has the advantage of an offsite backup (provided you keep a local clone)
